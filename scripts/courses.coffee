@@ -10,4 +10,4 @@
 module.exports = (robot) ->
 
   robot.hear /C\s?[0-9]+/i, (res) ->
-    res.send "Translate #{matches[0]} to course name"
+    res.send "Translate #{res.match[0]} to course name"
