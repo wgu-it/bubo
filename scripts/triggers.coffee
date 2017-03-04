@@ -22,6 +22,9 @@ triggers = {
 
 module.exports = (robot) ->
 
+  robot.respond "list triggers", (res) ->
+    res.send ("#{TRIGGER}#{key}" for own key of triggers).join(", ")
+
   robot.hear ///^#{TRIGGER}(.+)$///gi, (res) ->
     match = res.match[0].replace(///^#{TRIGGER}///, "")
     if triggers[match]?
