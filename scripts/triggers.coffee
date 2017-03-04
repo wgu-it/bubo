@@ -23,7 +23,7 @@ triggers = {
 
 module.exports = (robot) ->
 
-  robot.respond "list triggers", (res) ->
+  robot.respond /list triggers/, (res) ->
     res.send ("#{TRIGGER}#{key}" for own key of triggers).join(", ")
 
   robot.hear ///^#{TRIGGER}(.+)$///gi, (res) ->
