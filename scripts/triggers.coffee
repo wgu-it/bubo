@@ -7,6 +7,7 @@
 #
 # Commands:
 #   !<trigger>
+#   bubo list triggers
 #
 # Author:
 #   Ryan Winchester <code@ryanwinchester.ca>
