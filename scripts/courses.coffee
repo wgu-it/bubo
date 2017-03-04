@@ -9,5 +9,5 @@
 
 module.exports = (robot) ->
 
-  robot.hear /C\s?([0-9]+)/i, (res) ->
+  robot.hear /C\s?([0-9]{3})[^0-9]/i, (res) ->
     res.send "Translate course no. #{res.match[1]} to course name, if exists"
