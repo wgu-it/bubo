@@ -13,5 +13,5 @@ module.exports = (robot) ->
     # TODO: Translate all matches
     courses = for course, i in res.match
       course = course.replace(/[^0-9]+/, "")
-      "TODO: Translate course ##{course} to course name, if exists."
+      "TODO: C#{course}: translate course ##{course} to course name, if exists."
     res.send courses.join "\n"
