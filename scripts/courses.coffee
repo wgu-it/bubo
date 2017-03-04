@@ -11,7 +11,8 @@ course_list = require('../support/courses')
 
 module.exports = (robot) ->
 
-  robot.hear /C(?:\s|-)?([0-9]{3})(?:[^0-9]|$)/gi, (res) ->
+  robot.hear /C(?:\s|-)?([0-9]{3})/gi, (res) ->
+    console.log res.match
     courses = for course in res.match
       course = "C" + course.replace(/[^0-9]+/, "").replace(/\s/, "")
       if course_list[course]?
