@@ -9,6 +9,9 @@
 
 module.exports = (robot) ->
 
-  robot.hear /C(?:\s|-)?([0-9]{3})(?:[^0-9]|$)/i, (res) ->
+  robot.hear /C(?:\s|-)?([0-9]{3})(?:[^0-9]|$)/gi, (res) ->
     # TODO: Translate all matches
-    res.send "TODO: Translate course ##{res.match[1]} to course name, if exists."
+    courses = for course, i in res.match
+      course = course.replace(/[^0-9]+/, "")
+      "TODO: Translate course ##{course} to course name, if exists."
+    res.send courses.join "\n"
