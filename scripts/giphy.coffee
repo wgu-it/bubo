@@ -12,8 +12,8 @@ giphy =
   base_url: 'http://api.giphy.com/v1'
 
 module.exports = (robot) ->
-  robot.hear /!(gif|giphy|animate)( me)? (.*)/i, (msg) ->
-    giphyMe msg, msg.match[3], (url) ->
+  robot.hear /!giphy( me)? (.*)/i, (msg) ->
+    giphyMe msg, msg.match[2], (url) ->
       msg.send url
 
 giphyMe = (msg, query, cb) ->
