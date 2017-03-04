@@ -1,3 +1,14 @@
+# Description:
+#   List of WGU IT courses with descriptions.
+#   Copypasta from http://www.wgu.edu/wgu/institutional_catalog2017.pdf
+#
+# Notes:
+#   If you would like to add more, please add them in alphabetical (numerical)
+#   order, to make things easier in the long-term.
+#
+# Author:
+#   Ryan Winchester <code@ryanwinchester.ca>
+
 module.exports = {
   "C169": {
     name: "Scripting and Programming - Applications",
@@ -221,7 +232,7 @@ module.exports = {
   },
   "TPV1": {
     name: "Project Management",
-    desc: "This course focuses on skills and concepts students need to know to plan and implement projects. The project initiation and planning process is covered in-depth, culminating in the creation of a project schedule. Learning how to manage business concerns such as cost and risk is balanced by thorough coverage of best practices in managing people and resources. Students will also learn how to manage change and the steps necessary in closing a project"
+    desc: "This course focuses on skills and concepts students need to know to plan and implement projects. The project initiation and planning process is covered in-depth, culminating in the creation of a project schedule. Learning how to manage business concerns such as cost and risk is balanced by thorough coverage of best practices in managing people and resources. Students will also learn how to manage change and the steps necessary in closing a project."
   },
   "WPV1": {
     name: "Software II",
