@@ -13,7 +13,7 @@
 #   Ryan Winchester <fungku@gmail.com>
 
 module.exports = (robot) ->
-  robot.hear /!(image|img)( me)?( -)? (.*)/i, (msg) ->
+  robot.respond /(image|img)( me)?( -)? (.*)/i, (msg) ->
     account_key = process.env.HUBOT_BING_IMAGES_KEY
     adult = process.env.HUBOT_BING_IMAGES_ADULT || "Strict"
     url = "https://api.datamarket.azure.com/Bing/Search/v1/Image"
