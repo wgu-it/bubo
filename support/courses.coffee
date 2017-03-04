@@ -3,7 +3,7 @@
 #   Copypasta from http://www.wgu.edu/wgu/institutional_catalog2017.pdf
 #
 # Notes:
-#   If you would like to add more, please add them in alphabetical (numerical)
+#   If you would like to add more, please add them in alphabetical (and numerical)
 #   order, to make things easier in the long-term.
 #
 # Author:
