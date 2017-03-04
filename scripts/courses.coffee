@@ -11,10 +11,9 @@ course_list = require('../support/courses')
 
 module.exports = (robot) ->
 
-  robot.hear /C(?:\s|-)?([0-9]{3})/gi, (res) ->
-    console.log res.match
+  robot.hear /([a-zA-Z]{1,3})(?:\s|-)?([0-9]{1,4})/gi, (res) ->
     courses = for course in res.match
-      course = "C" + course.replace(/[^0-9]+/, "").replace(/\s/, "")
+      course = course.replace(/[^a-zA-Z0-9]+/, "").toUpperCase()
       if course_list[course]?
         "#{course}: " + course_list["#{course}"].name
     courses = courses.filter (c) -> c?
