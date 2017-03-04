@@ -1,6 +1,7 @@
 # Description:
 #   List of WGU IT courses with descriptions.
 #   Copypasta from http://www.wgu.edu/wgu/institutional_catalog2017.pdf
+#     See pages 150+ for courses and their descriptions.
 #
 # Notes:
 #   If you would like to add more, please add them in alphabetical (and numerical)
