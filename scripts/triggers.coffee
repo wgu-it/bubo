@@ -12,21 +12,15 @@
 # Author:
 #   Ryan Winchester <code@ryanwinchester.ca>
 
-TRIGGER = process.env.HUBOT_TRIGGER_CHAR || '!'
-
-triggers = {
-  "hello": "Hi there!",
-  "goodbye": "See ya!",
-  "no": "Noooo! https://www.youtube.com/watch?v=umDr0mPuyQc",
-  "nope": "https://media.giphy.com/media/6h4z4b3v6XWxO/giphy.gif",
-}
+trigger_char = process.env.HUBOT_TRIGGER_CHAR || '!'
+triggers = require('../support/triggers')
 
 module.exports = (robot) ->
 
   robot.respond /list triggers/, (res) ->
-    res.send ("#{TRIGGER}#{key}" for own key of triggers).join(", ")
+    res.send ("#{trigger_char}#{key}" for own key of triggers).join(", ")
 
-  robot.hear ///^#{TRIGGER}(.+)$///gi, (res) ->
-    match = res.match[0].replace(///^#{TRIGGER}///, "")
+  robot.hear ///^#{trigger_char}(.+)$///gi, (res) ->
+    match = res.match[0].replace(///^#{trigger_char}///, "")
     if triggers[match]?
       res.send triggers[match]
