@@ -24,15 +24,3 @@ module.exports = (robot) ->
     course = "#{res.match[1]}#{res.match[2]}".replace(/[^a-zA-Z0-9]+/, "").toUpperCase()
     if course_list[course]?
       res.send course_list[course].desc
-
-  # for course in courses
-  #   letters = course.replace /[^a-zA-Z]/, ""
-  #   num = course.replace /[^0-9]/, ""
-  #   robot.hear ///#{letter}\s?-?#{num}///gi, (res) ->
-  #     courses = for course in res.match
-  #       course = course.replace(/[^a-zA-Z0-9]+/, "").toUpperCase()
-  #       if course_list[course]?
-  #         "#{course}: " + course_list["#{course}"].name
-  #     courses = courses.filter (c) -> c?
-  #     if courses.length > 0
-  #       res.send courses.join("\n")
