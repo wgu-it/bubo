@@ -6,24 +6,25 @@
 
 module.exports = (robot) ->
   robot.respond /(video|vid)( me)?( -)? (.*)/i, (msg) ->
-    norandom = msg.match[3]?
-    query = msg.match[4]
-    robot.http("https://www.googleapis.com/youtube/v3/search")
-      .query({
-        key: process.env.HUBOT_YOUTUBE_KEY
-        part: "id"
-        type: "video"
-        order: "relevance"
-        maxResults: 15
-        q: query
-      })
-      .get() (err, res, body) ->
-        result = JSON.parse(body)
-        videos = result.items
+    if msg.message.room == 'G4FL9V07P' or msg.message.room == 'C4E0JMACS' or msg.message.room == 'Shell'
+      norandom = msg.match[3]?
+      query = msg.match[4]
+      robot.http("https://www.googleapis.com/youtube/v3/search")
+        .query({
+          key: process.env.HUBOT_YOUTUBE_KEY
+          part: "id"
+          type: "video"
+          order: "relevance"
+          maxResults: 15
+          q: query
+        })
+        .get() (err, res, body) ->
+          result = JSON.parse(body)
+          videos = result.items
 
-        unless videos?
-          msg.send "No video results for \"#{query.substr(0,30)}\""
-          return
+          unless videos?
+            msg.send "No video results for \"#{query.substr(0,30)}\""
+            return
 
-        video = if norandom then videos[0] else msg.random videos
-        msg.send "https://youtu.be/" + video.id.videoId
+          video = if norandom then videos[0] else msg.random videos
+          msg.send "https://youtu.be/" + video.id.videoId

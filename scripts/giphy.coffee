@@ -13,8 +13,9 @@ giphy =
 
 module.exports = (robot) ->
   robot.hear /!giphy( me)? (.*)/i, (msg) ->
-    giphyMe msg, msg.match[2], (url) ->
-      msg.send url
+    if msg.message.room == 'G4FL9V07P' or msg.message.room == 'C4E0JMACS' or msg.message.room == 'Shell'
+      giphyMe msg, msg.match[2], (url) ->
+        msg.send url
 
 giphyMe = (msg, query, cb) ->
   endpoint = '/gifs/search'

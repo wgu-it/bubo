@@ -18,6 +18,7 @@ responses = require('../support/responses')
 module.exports = (robot) ->
 
   robot.respond /(.*)/, (msg) ->
-    command = msg.match[1].replace ///#{robot.name}\s?///, ""
-    if responses[command]?
-      msg.send responses[command]
+    if msg.message.room == 'G4FL9V07P' or msg.message.room == 'C4E0JMACS' or msg.message.room == 'Shell'
+      command = msg.match[1].replace ///#{robot.name}\s?///, ""
+      if responses[command]?
+        msg.send responses[command]

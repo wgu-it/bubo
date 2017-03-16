@@ -16,8 +16,9 @@
 module.exports = (robot) ->
 
   robot.hear /!(?:gif|animate)( me)? (.*)/i, (msg) ->
-   rightGif msg, msg.match[2], (url) ->
-     msg.send url
+    if msg.message.room == 'G4FL9V07P' or msg.message.room == 'C4E0JMACS' or msg.message.room == 'Shell'
+      rightGif msg, msg.match[2], (url) ->
+        msg.send url
 
 rightGif = (msg, query, cb) ->
   url = 'https://rightgif.com/search/web'
