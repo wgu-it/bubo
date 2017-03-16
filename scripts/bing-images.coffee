@@ -15,6 +15,7 @@
 module.exports = (robot) ->
 
   robot.respond /(image|img)( me)?( -)? (.*)/i, (msg) ->
+    msg.send JSON.stringify("```\n"+JSON.stringify(msg.message)+"\n```")
     if msg.message.room == 'random' or msg.message.room == 'bot-test' or msg.message.room == 'Shell'
       account_key = process.env.HUBOT_BING_IMAGES_KEY
       adult = process.env.HUBOT_BING_IMAGES_ADULT || "Strict"
