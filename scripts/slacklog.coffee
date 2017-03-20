@@ -60,12 +60,12 @@ module.exports = (robot) ->
     @client.query query, values, (err, results) ->
       if err
         console.log err
-        if get_channel(response) == bot_test_room
+        if message.channel_id == 'G4FL9V07P' # bot-test channel
           response.send JSON.stringify(err)
           response.send """
-            username: #{get_username(response)},
-            message_id: #{get_message_id(response)},
-            channel: #{get_channel(response)}
+            username: #{message.username},
+            message_id: #{message.id},
+            channel: #{message.channel_id}
           """
       @client.destroy()
 
