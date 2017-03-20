@@ -59,14 +59,21 @@ module.exports = (robot) ->
       database: "#{process.env.HUBOT_MYSQL_DATABASE}"
       user: "#{process.env.HUBOT_MYSQL_USER}"
       password: "#{process.env.HUBOT_MYSQL_PASS}"
+
     @client.on 'error', (err) ->
       robot.emit 'error', err, msg
-    @client.query "INSERT INTO messages VALUES(\'#{get_message_id(response)}\', \'#{query}\', \'#{get_username(response)}\', \'#{get_channel(response)}\', DEFAULT, DEFAULT);", (err, results) =>
+
+    @client.query 'INSERT INTO messages VALUES(?, ?, ?, ?, DEFAULT, DEFAULT);',
+      [get_message_id(response), query, get_username(response), get_channel(response)],
+      (err, results) =>
       if err
         console.log err
         if get_channel(response) == bot_test_room
           response.send JSON.stringify(err)
-          response.send "username: #{get_username(response)}, message_id: #{get_message_id(response)}, channel: #{get_channel(response)}"
-        return
+          response.send """
+            username: #{get_username(response)},
+            message_id: #{get_message_id(response)},
+            channel: #{get_channel(response)}
+          """
       @client.destroy()
 
