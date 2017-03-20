@@ -66,8 +66,8 @@ module.exports = (robot) ->
         if get_channel(response) == bot_test_room
           response.send "error #{get_username(response)}"
           response.send JSON.stringify(err)
-          # robot.adapter.client.chat.postMessage('bot-test', JSON.stringify(err), {unfurl_links: false})
-          # robot.adapter.client.chat.postMessage(bot_test_room, "error #{get_username(response)}", {unfurl_links: false})
+        robot.adapter.client.chat.postMessage('bot-test', JSON.stringify(err), {unfurl_links: false})
+        robot.adapter.client.chat.postMessage(bot_test_room, "error #{get_username(response)}", {unfurl_links: false})
           # robot.adapter.client.chat.postMessage(bot_test_room, JSON.stringify(err), {unfurl_links: false})
         return
       @client.destroy()
