@@ -66,7 +66,7 @@ module.exports = (robot) ->
         console.log err
         if get_channel(response) == bot_test_room
           response.send JSON.stringify(err)
-          response.send JSON.stringify(response.message)
+          response.send "username: #{get_username(response)}, message_id: #{get_message_id(response)}, channel: #{get_channel(response)}"
         return
       @client.destroy()
 
