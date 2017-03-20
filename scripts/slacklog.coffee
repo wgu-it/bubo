@@ -20,16 +20,13 @@
 mysql = require 'mysql'
 validator = require 'validator'
 
-channels =
-  G4FL9V07P: 'bot-test'
-
 module.exports = (robot) ->
 
   robot.catchAll (response) ->
     message =
       id: response.message.id,
       username: response.message.user.name,
-      channel: channels[response.message.room],
+      channel_id: response.message.room,
       text: response.message.text
 
     unless process.env.HUBOT_MYSQL_HOST?
