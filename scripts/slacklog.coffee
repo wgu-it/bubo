@@ -29,7 +29,7 @@ module.exports = (robot) ->
     message =
       id: response.message.id,
       username: response.message.user.name,
-      channel: response.message.room,
+      channel: channels[response.message.room],
       text: response.message.text
 
     unless process.env.HUBOT_MYSQL_HOST?
