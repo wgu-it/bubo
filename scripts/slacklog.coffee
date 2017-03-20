@@ -19,7 +19,7 @@
 
 mysql = require 'mysql'
 validator = require 'validator'
-bot_test_room = 'C4E0JMACS'
+bot_test_room = 'G4FL9V07P'
 
 module.exports = (robot) ->
 
@@ -63,10 +63,12 @@ module.exports = (robot) ->
       robot.emit 'error', err, msg
     @client.query "INSERT INTO messages VALUES(\'#{get_message_id(response)}\', \'#{query}\', \'#{get_username(response)}\', \'#{get_channel(response)}\', DEFAULT, DEFAULT);", (err, results) =>
       if err
-        response.send get_channel(response)
-        # robot.adapter.client.chat.postMessage('bot-test', JSON.stringify(err), {unfurl_links: false})
-        # robot.adapter.client.chat.postMessage(bot_test_room, "error #{get_username(response)}", {unfurl_links: false})
-        # robot.adapter.client.chat.postMessage(bot_test_room, JSON.stringify(err), {unfurl_links: false})
+        if get_channel(response) == bot_test_room
+          response.send "error #{get_username(response)}"
+          response.send JSON.stringify(err)
+          # robot.adapter.client.chat.postMessage('bot-test', JSON.stringify(err), {unfurl_links: false})
+          # robot.adapter.client.chat.postMessage(bot_test_room, "error #{get_username(response)}", {unfurl_links: false})
+          # robot.adapter.client.chat.postMessage(bot_test_room, JSON.stringify(err), {unfurl_links: false})
         return
       @client.destroy()
 
