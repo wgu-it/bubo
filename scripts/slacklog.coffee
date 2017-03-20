@@ -55,7 +55,7 @@ module.exports = (robot) ->
       robot.emit 'error', err, msg
 
     query = 'INSERT INTO messages VALUES(?, ?, ?, ?, DEFAULT, DEFAULT);'
-    values = [message.id, message.text, message.username, message.channel]
+    values = [message.id, message.text, message.username, message.channel_id]
 
     @client.query query, values, (err, results) ->
       if err
