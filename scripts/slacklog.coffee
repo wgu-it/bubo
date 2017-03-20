@@ -63,6 +63,7 @@ module.exports = (robot) ->
       robot.emit 'error', err, msg
     @client.query "INSERT INTO messages VALUES(\'#{get_message_id(response)}\', \'#{query}\', \'#{get_username(response)}\', \'#{get_channel(response)}\', DEFAULT, DEFAULT);", (err, results) =>
       if err
+        robot.adapter.client.chat.postMessage('bot-test', JSON.stringify(err), {unfurl_links: false})
         robot.adapter.client.chat.postMessage(bot_test_room, "error #{get_username(response)}", {unfurl_links: false})
         robot.adapter.client.chat.postMessage(bot_test_room, JSON.stringify(err), {unfurl_links: false})
         return
