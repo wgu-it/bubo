@@ -19,24 +19,18 @@
 
 mysql = require 'mysql'
 validator = require 'validator'
-bot_test_room = 'G4FL9V07P'
+
+channels =
+  G4FL9V07P: 'bot-test'
 
 module.exports = (robot) ->
 
-  get_message_id = (response) ->
-    console.log response.message
-    "#{response.message.id}"
-
-  get_username = (response) ->
-    "#{response.message.user.name}"
-
-  # helper method to get channel of originating message
-  get_channel = (response) ->
-    "#{response.message.room}"
-
   robot.catchAll (response) ->
-    msg = response.message.text
-    query = validator.blacklist(msg, [';'])
+    message =
+      id: response.message.id,
+      username: response.message.user.name,
+      channel: response.message.room,
+      text: response.message.text
 
     unless process.env.HUBOT_MYSQL_HOST?
       console.log "Missing host environment variable"
@@ -63,9 +57,10 @@ module.exports = (robot) ->
     @client.on 'error', (err) ->
       robot.emit 'error', err, msg
 
-    @client.query 'INSERT INTO messages VALUES(?, ?, ?, ?, DEFAULT, DEFAULT);',
-      [get_message_id(response), query, get_username(response), get_channel(response)],
-      (err, results) =>
+    query = 'INSERT INTO messages VALUES(?, ?, ?, ?, DEFAULT, DEFAULT);'
+    values = [message.id, message.text, message.username, message.channel]
+
+    @client.query query, values, (err, results) ->
       if err
         console.log err
         if get_channel(response) == bot_test_room
