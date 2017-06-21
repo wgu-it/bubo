@@ -2,14 +2,13 @@
 
 set -e
 
-export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
-
 # import private variables
 if [ -f "../.env" ]; then
   source "../.env";
 fi
 
 yarn
+
 export PATH="node_modules/.bin:node_modules/hubot/node_modules/.bin:$PATH"
 
 exec node_modules/.bin/hubot --name "bubo" "$@"
