@@ -1,11 +1,17 @@
-#!/bin/sh
+#!/bin/bash
 
 set -e
 
+HUBOT_BIN="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
 # import private variables
-if [ -f "../.env" ]; then
-  source "../.env";
+if [ -f "$HUBOT_BIN/../.env" ]; then
+  set -o allexport
+  source "$HUBOT_BIN/../.env"
+  set +o allexport
 fi
+
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 yarn
 
