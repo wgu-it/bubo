@@ -395,6 +395,46 @@ module.exports = {
     name: "Web Development Foundations - CIW Site Development Fundamentals",
     desc: "This course introduces students to web design and development by presenting them with HTML5 and CSS, the foundational languages of the web, by reviewing media strategies, and by using tools and techniques commonly employed in web development."
   },
+  "C836": {
+    name: "Fundamentals of Information Security",
+    desc: "This course lays the foundation for understanding terminology, principles, processes and best practices of information security at local and global levels. It further provides an overview of basic security vulnerabilities and countermeasures for protecting information assets through planning and administrative controls within an organization. ",
+  },
+  "C837": {
+    name: "Managing Web Security - CIW WSA",
+    desc: "Almost all businesses and organizations require a web presence. The security needs, demands, and defenses for these online environments differ from those of an isolated single computer or intranet. This course introduces best practices for preventing security breaches by applying web security protocols, firewalls, and system configurations. This course prepares students for the Web Security Associate (CIW WSA) certification exam",
+  },
+  "C838": {
+    name: "Managing Cloud Security - ISC2 CCSP",
+    desc: "Many of today’s companies and organizations have outsourced data management, availability, and operational processes through cloud computing. In this course, students design solutions for cloud-based platforms and operations that maintain data availability while protecting the confidentiality and integrity of information. This includes security controls, disaster recovery plans, and continuity management plans that address physical, logical, and human factors. This course prepares students for the Certified Cloud Security Professional (ISC2 CCSP) certification exam.",
+  },
+  "C839": {
+    name: "Introduction to Cryptography - EC-Council ECES",
+    desc: "This course provides students with knowledge of cryptographic algorithms, protocols, and their uses in the protection of information in various states. This course prepares students for the Certified Encryption Specialist (EC-Council ECES) certification exam.",
+  },
+  "C840": {
+    name: "Digital Forensics in Cybersecurity",
+    desc: "Digital forensics, the science of investigating cybercrimes, seeks evidence that reveals who, what, when, where, and how threats compromise information. This course examines the relationships between incident categories, evidence handling, and incident management. Students identify consequences associated with cyber threats and security laws using a variety of tools to recognize and recover from unauthorized, malicious activities",
+  },
+  "C841": {
+    name: "Legal Issues in Information Security",
+    desc: "Security information professionals have the role and responsibility for knowing and applying ethical and legal principles and processes that define specific needs and demands to assure data integrity within an organization. This course addresses the laws, regulations, authorities, and directives that inform the development of operational policies, best practices, and training to assure legal compliance and to minimize internal and external threats. Students analyze legal constraints and liability concerns that threaten information security within an organization and develop disaster recovery plans to assure business continuity.",
+  },
+  "C842": {
+    name: "Cyber Defense and Countermeasures - EC-Council ECIH",
+    desc: "Traditional defenses such as firewalls, security protocols, and encryption sometimes fail to stop attackers determined to access and compromise data. This course provides the fundamental skills to handle and respond to the computer security incidents in an information system. The course addresses various underlying principles and techniques for detecting and responding to current and emerging computer security threats. Students learn how to handle various types of incidents, risk assessment methodologies, and various laws and policy related to incident handling. This course prepares students for the Certified Incident Handler (EC-Council ECIH) certification exam",
+  },
+  "C843": {
+    name: "Managing Information Security",
+    desc: "This course expands on fundamentals of information security by providing an in-depth analysis of the relationship between an information security program and broader business goals and objectives. Students develop knowledge and experience in the development and management of an information security program essential to ongoing education, career progression, and value delivery to enterprises. Students apply best practices to develop an information security governance framework, analyze mitigation in the context of compliance requirements, align security programs with security strategies and best practices, and recommend procedures for managing security strategies that minimize risk to an organization. ",
+  },
+  "C844": {
+    name: "Emerging Technologies in Cybersecurity",
+    desc: "The continual evolution of technology means that cybersecurity professionals must be able to analyze and evaluate new technologies in information security such as wireless, mobile, and internet technologies. Students review the adoption process which prepares an organization for the risks and challenges of implementing new technologies. This course focuses on comparison of evolving technologies to address the security requirements of an organization. Students learn underlying principles critical to the operation of secure networks and adoption of new technologies.",
+  },
+  "C845": {
+    name: "Information Systems Security - ISC2 SSCP",
+    desc: "IT security professionals must be prepared for the operational demands and responsibilities of security practitioners, including authentication, security testing, intrusion detection and prevention, incident response and recovery, attacks and countermeasures, cryptography, and malicious code countermeasures. This course provides a comprehensive, up-to-date global body of knowledge that ensures students have the right information security knowledge and skills to be successful in IT operational roles to mitigate security concerns and guard against the impact of malicious activity. Students demonstrate how to manage and restrict access control systems; administer policies, procedures, and guidelines that are ethical and compliant with laws and regulations; implement risk management and incident handling processes; execute cryptographic systems to protect data; manage network security; and analyze common attack vectors and countermeasures to assure information integrity and confidentiality in various systems. This course prepares students for the Systems Security Certified Practitioner (ISC2 SSCP) certification exam",
+  },
   "C846": {
     name: "Business of IT - Applications",
     desc: "Business of IT – Applications examines Information Technology Infrastructure Library (ITIL) terminology, structure, policies, and concepts. Focusing on the management of Information Technology (IT) infrastructure, development, and operations, students will explore the core principles of ITIL practices for service management to prepare them for careers as IT professionals, business managers, and business process owners. This course has no prerequisites."
@@ -409,7 +449,7 @@ module.exports = {
   },
   "CPW2": {
     name: "IT-Network Administration Capstone Project",
-    desc: "TODO - deprecated"
+    desc: "The capstone project consists of a technical work proposal, the proposal’s implementation, and a post-implementation report that describes the graduate’s experience in developing and implementing the capstone project. The capstone project should be presented and approved by the mentor in relation to the graduate’s technical emphasis. "
   },
   "CUV1": {
     name: "Web Technologies",
