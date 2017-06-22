@@ -39,7 +39,7 @@ module.exports = (robot) ->
     (msg) ->
       msg.room is 'G5YGDFA07'
     (response) ->
-      response.reply response.message.type
+      response.reply response.type
   )
 
   robot.respond /greet ([^\s]+)/, (msg) ->
