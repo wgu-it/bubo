@@ -25,5 +25,5 @@ images = [
 
 module.exports = (robot) ->
   robot.hear /s(rsly|eriously) gu(?:ise|ys)/i, (msg) ->
-    if res.message.room == 'C0Z77BT4M' or res.message.room == 'C0Z77BT8V' or res.message.room == 'Shell'
+    if msg.message.room == 'C0Z77BT4M' or msg.message.room == 'C0Z77BT8V' or msg.message.room == 'Shell'
       msg.send msg.random images
