@@ -274,7 +274,7 @@ module.exports = {
   "C132": {
     name: "Elements of Effective Communication",
     desc: ""
-  },s
+  },
   "C168": {
     name: "Critical Thinking and Logic",
     desc: ""
