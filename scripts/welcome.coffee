@@ -15,5 +15,5 @@ response = welcome_materials.welcome_message +
 
 module.exports = (robot) ->
   robot.hear /(joined #bubo-test$)/gi, (msg) ->
-    if msg.message.room == 'G5YGDFA07' or msg.message.room == 'Shell'
+    if msg.message.room == 'C5YHBTNG6' or msg.message.room == 'Shell'
       msg.send(response)
