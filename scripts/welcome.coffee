@@ -31,9 +31,7 @@ module.exports = (robot) ->
   # )
 
   robot.enter (res) ->
-    if res.message.room == 'C0Z77BT8V'
-      robot.messageRoom res.envelope.user.id, greeting
-    if res.message.room == 'C0Z77BT4M'
+    if res.message.room is 'C0Z77BT4M' or res.message.room is 'G5YGDFA07'
       robot.messageRoom res.envelope.user.id, greeting
 
   robot.respond /greet ([^\s]+)/, (msg) ->
