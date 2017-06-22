@@ -15,8 +15,7 @@
 
 module.exports = (robot) ->
 
-  die = Math.floor(Math.random() * 6) + 1
-  secondDie = Math.floor(Math.random() * 6) + 1
-  
-  robot.hear /bubo roll the dice/, (msg) ->
-    msg.send "I rolled the dice and came up with a #{die} and a #{secondDie} for a total of #{die + secondDie}!"
+  robot.respond /roll the dice/i, (msg) ->
+    first = Math.floor(Math.random() * 6) + 1
+    second = Math.floor(Math.random() * 6) + 1
+    msg.send "I rolled the dice and came up with a #{first} and a #{second} for a total of #{first + second}!"
