@@ -24,11 +24,15 @@ Feel free to reach out if you have any questions, and again, welcome! :smile:
 
 module.exports = (robot) ->
 
-  robot.hear /(joined #general$)/gi, (msg) ->
+  robot.hear /(joined #general$)/i, (msg) ->
     if msg.message.room == 'C0Z77BT8V' or msg.message.room == 'G5YGDFA07' or msg.message.room == 'Shell'
       msg.send "Hola, amigo"
 
-  robot.hear /^([^\s]+) has joined the channel$/gi, (msg) ->
+  robot.hear /^([^\s]+) has joined the channel$/i, (msg) ->
     if msg.message.room == 'C0Z77BT8V' or msg.message.room == 'G5YGDFA07' or msg.message.room == 'Shell'
       msg.send "Hi, #{msg.match[0]}"
+
+  robot.hear /joined/i, (msg) ->
+    msg.send "Hi, you."
+
 
