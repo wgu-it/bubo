@@ -29,5 +29,18 @@ module.exports = (robot) ->
     if msg.message.type == 'team_join'
       msg.send greeting
 
+  robot.listen(
+    (msg) -> msg.message.type is "team_join"
+    (response) ->
+      response.reply greeting
+  )
+
+  robot.listen(
+    (msg) ->
+      msg.message.room is 'G5YGDFA07'
+    (response) ->
+      response.reply response.message.type
+  )
+
   robot.respond /greet ([^\s]+)/, (msg) ->
     msg.send "#{msg.match[1]}!\n#{greeting}"
