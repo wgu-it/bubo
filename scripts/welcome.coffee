@@ -28,3 +28,6 @@ module.exports = (robot) ->
     # if msg.message.room == 'C0Z77BT8V' or msg.message.room == 'G5YGDFA07' or msg.message.room == 'Shell'
     if msg.message.type == 'team_join'
       msg.send greeting
+
+  robot.respond /greet (\w+)/, (msg) ->
+    msg.send "#{msg.match[0]}\n#{greeting}"
