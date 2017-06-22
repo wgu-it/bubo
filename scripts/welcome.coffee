@@ -39,8 +39,11 @@ module.exports = (robot) ->
     (msg) ->
       msg.room is 'G5YGDFA07'
     (response) ->
-      response.reply JSON.stringify(response)
+      response.reply response.match
   )
+
+  robot.enter (res) ->
+    res.send 'WELCOME'
 
   robot.respond /greet ([^\s]+)/, (msg) ->
     msg.send "#{msg.match[1]}!\n#{greeting}"
