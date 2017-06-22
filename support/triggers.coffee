@@ -10,4 +10,5 @@ module.exports = {
   "colors": "#003057,#4986AD,#C69214,#FFFFFF,#4986AD,#FFFFFF,#509E2F,#862633",
   "git": "https://github.com/wgu-it/bubo",
   "contributing": "To help me get better you can *fork* https://github.com/wgu-it/bubo, *commit* your changes, and then make a *pull request*!",
+  "googledrive": "Repo with eBooks and More! Sign up with your @wgu.edu email address. https://drive.google.com/folderview?id=0B1S7OJNChk1-cWhwNWZTb2JNY1E",
 }
