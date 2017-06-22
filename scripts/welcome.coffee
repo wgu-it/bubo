@@ -31,7 +31,7 @@ module.exports = (robot) ->
   # )
 
   robot.enter (res) ->
-    if res.message.room == 'C0Z77BT8V' or res.message.room == 'G5YGDFA07' or res.message.room == 'Shell'
+    if res.message.room == 'C0Z77BT8V'
       res.reply greeting
 
   robot.respond /greet ([^\s]+)/, (msg) ->
