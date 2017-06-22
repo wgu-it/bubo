@@ -18,4 +18,4 @@ module.exports = (robot) ->
   robot.respond /roll the dice/i, (msg) ->
     first = Math.floor(Math.random() * 6) + 1
     second = Math.floor(Math.random() * 6) + 1
-    msg.emote "rolls the dice for #{msg.message.user.name} and comes up with a *#{first}* and a *#{second}* for a total of *#{first + second}*!"
+    msg.send "I rolled the dice for @#{msg.message.user.name} and came up with a *#{first}* and a *#{second}* for a total of *#{first + second}*!"
