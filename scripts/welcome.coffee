@@ -30,14 +30,14 @@ module.exports = (robot) ->
       msg.send greeting
 
   robot.listen(
-    (msg) -> msg.message.type is "team_join"
+    (msg) -> msg.type is "team_join"
     (response) ->
       response.reply greeting
   )
 
   robot.listen(
     (msg) ->
-      msg.message.room is 'G5YGDFA07'
+      msg.room is 'G5YGDFA07'
     (response) ->
       response.reply response.message.type
   )
