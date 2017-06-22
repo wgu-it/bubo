@@ -11,4 +11,5 @@ module.exports = {
   "git": "https://github.com/wgu-it/bubo",
   "contributing": "To help me get better you can *fork* https://github.com/wgu-it/bubo, *commit* your changes, and then make a *pull request*!",
   "googledrive": "Repo with eBooks and More! Sign up with your @wgu.edu email address. https://drive.google.com/folderview?id=0B1S7OJNChk1-cWhwNWZTb2JNY1E",
+  "shrug": "¯\_(ツ)_/¯",
 }
