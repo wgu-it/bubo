@@ -24,26 +24,15 @@ Feel free to reach out if you have any questions, and again, welcome! :smile:
 
 module.exports = (robot) ->
 
-  robot.hear /./, (msg) ->
-    # if msg.message.room == 'C0Z77BT8V' or msg.message.room == 'G5YGDFA07' or msg.message.room == 'Shell'
-    if msg.message.type == 'team_join'
-      msg.send greeting
-
-  robot.listen(
-    (msg) -> msg.type is "team_join"
-    (response) ->
-      response.reply greeting
-  )
-
-  robot.listen(
-    (msg) ->
-      msg.room is 'G5YGDFA07'
-    (response) ->
-      response.reply response.match
-  )
+  # robot.listen(
+  #   (msg) -> msg.type is "team_join"
+  #   (response) ->
+  #     response.reply greeting
+  # )
 
   robot.enter (res) ->
-    res.send 'WELCOME'
+    if res.message.room == 'C0Z77BT8V' or res.message.room == 'G5YGDFA07' or res.message.room == 'Shell'
+      res.reply res.message.type
 
   robot.respond /greet ([^\s]+)/, (msg) ->
     msg.send "#{msg.match[1]}!\n#{greeting}"
