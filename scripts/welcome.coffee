@@ -7,7 +7,7 @@
 welcome_materials = require('../support/welcome')
 
 response = welcome_materials.welcome_message +
-"\n\n This is a shared Google Drive that contains reources for several of the courses. (Be sure to login with your WGU gmail account!): "+ welcome_materials.google_drive +
+"\n\n This is a shared Google Drive that contains resources for several of the courses. (Be sure to login with your WGU gmail account!): "+ welcome_materials.google_drive +
 "\n Here is a list of student discounts that you can take advantage of: "+ welcome_materials.student_discounts +
 "\n We have created several communities for each major. Be sure to join the community for your major! This is where you will find the most applicable information. " + welcome_materials.majors_list +
 "\n You'll notice that we use a lot of abbreviations around here. Here is a quick guide that will help you make sense of our crazy language: " + welcome_materials.guide_to_common_abbreviations+
