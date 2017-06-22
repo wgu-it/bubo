@@ -11,6 +11,292 @@
 #   Ryan Winchester <code@ryanwinchester.ca>
 
 module.exports = {
+"C200": {
+    name: "Managing Organizations and Leading People",
+    desc: ""
+  },
+  "C700": {
+    name: "Secure Network Design",
+    desc: ""
+  },
+  "VLT2": {
+    name: "Security Policies and Standards - Best Practices",
+    desc: ""
+  },
+  "C299": {
+    name: "Designing Customized Security - CCNA Security",
+    desc: ""
+  },
+  "C298": {
+    name: "Web Programming",
+    desc: ""
+  },
+  "C463": {
+    name: "Intermediate Algebra",
+    desc: ""
+  },
+  "C451": {
+    name: "Integrated Natural Science",
+    desc: ""
+  },
+  "C434": {
+    name: "Medical Terminology",
+    desc: ""
+  },
+  "C779": {
+    name: "Web Development Foundations - CIW Site Development Fundamentals",
+    desc: ""
+  },
+  "C268": {
+    name: "Spreadsheets",
+    desc: ""
+  },
+  "C754": {
+    name: "Structured Query Language - Oracle DB 12c SQL Fundamentals",
+    desc: ""
+  },
+  "C755": {
+    name: "Database Server Administration - Oracle DB 12c Installation and Administration",
+    desc: ""
+  },
+  "C752": {
+    name: "Data Visualization",
+    desc: ""
+  },
+  "C756": {
+    name: "Data Analytics - CIW Data Analyst",
+    desc: ""
+  },
+  "C749": {
+    name: "Introduction to Data Science",
+    desc: ""
+  },
+  "C750": {
+    name: "Data Wrangling with MongoDB",
+    desc: ""
+  },
+  "C751": {
+    name: "Data Analysis with R",
+    desc: ""
+  },
+  "C753": {
+    name: "Machine Learning",
+    desc: ""
+  },
+  "C768": {
+    name: "Technical Communications",
+    desc: ""
+  },
+  "C207": {
+    name: "Data-Driven Decision Making",
+    desc: ""
+  },
+  "C688": {
+    name: "Cyber Warfare",
+    desc: ""
+  },
+  "C185": {
+    name: "Network Policies and Services Management",
+    desc: ""
+  },
+  "C186": {
+    name: "Server Administration",
+    desc: ""
+  },
+  "C187": {
+    name: "Network Reliability and Fault Tolerance",
+    desc: ""
+  },
+  "C183": {
+    name: "Operating Systems",
+    desc: ""
+  },
+  "C184": {
+    name: "Operating Systems Management Policies",
+    desc: ""
+  },
+  "JIT2": {
+    name: "Risk Management",
+    desc: ""
+  },
+  "C740": {
+    name: "Fundamentals of Data Analytics",
+    desc: ""
+  },
+  "C741": {
+    name: "Statistics for Data Analysis",
+    desc: ""
+  },
+  "C742": {
+    name: "Data Science Tools and Techniques",
+    desc: ""
+  },
+  "C743": {
+    name: "Data Mining and Analytics I",
+    desc: ""
+  },
+  "C744": {
+    name: "Data Mining and Analytics II",
+    desc: ""
+  },
+  "C745": {
+    name: "Advanced Data Visualization",
+    desc: ""
+  },
+  "C746": {
+    name: "Advanced SQL - Oracle SQL Certified Expert",
+    desc: ""
+  },
+  "C747": {
+    name: "SAS Programming I: Fundamentals - SAS Base Programmer",
+    desc: ""
+  },
+  "C748": {
+    name: "SAS Programming II: Business Analytics Applications - SAS Statistical Business Analyst",
+    desc: ""
+  },
+  "C772": {
+    name: "Data Analytics Graduate Capstone",
+    desc: ""
+  },
+  "C706": {
+    name: "Secure Software Design",
+    desc: ""
+  },
+  "C214": {
+    name: "Financial Management",
+    desc: ""
+  },
+  "MGT2": {
+    name: "IT Project Management",
+    desc: ""
+  },
+  "C202": {
+    name: "Managing Human Capital",
+    desc: ""
+  },
+  "C212": {
+    name: "Marketing",
+    desc: ""
+  },
+  "C213": {
+    name: "Accounting for Decision Makers",
+    desc: ""
+  },
+  "C211": {
+    name: "Global Economics for Managers",
+    desc: ""
+  },
+  "C206": {
+    name: "Ethical Leadership",
+    desc: ""
+  },
+  "MMT2": {
+    name: "IT Strategic Solutions",
+    desc: ""
+  },
+  "C218": {
+    name: "MBA, Information Technology Management Capstone",
+    desc: ""
+  },
+  "LYT2": {
+    name: "Current and Emerging Technology",
+    desc: ""
+  },
+  "MCT2": {
+    name: "Technical Writing for MS IT Management",
+    desc: ""
+  },
+  "MBT2": {
+    name: "Technological Globalization",
+    desc: ""
+  },
+  "C701": {
+    name: "Ethical Hacking - EC-CEH",
+    desc: ""
+  },
+  "C702": {
+    name: "Forensics and Network Intrusion - EC-CHFI",
+    desc: ""
+  },
+  "FXT2": {
+    name: "Disaster Recovery Planning, Prevention and Response",
+    desc: ""
+  },
+  "C464": {
+    name: "Introduction to Communication",
+    desc: ""
+  },
+  "C190": {
+    name: "Introduction to Biology",
+    desc: ""
+  },
+  "C683": {
+    name: "Natural Science Lab",
+    desc: ""
+  },
+  "C165": {
+    name: "Integrated Physical Science",
+    desc: ""
+  },
+  "C777": {
+    name: "Web Development Applications",
+    desc: ""
+  },
+  "C455": {
+    name: "English Composition I",
+    desc: ""
+  },
+  "C457": {
+    name: "Foundations of College Mathematics",
+    desc: ""
+  },
+  "C484": {
+    name: "Organizational Behavior and Leadership",
+    desc: ""
+  },
+  "C483": {
+    name: "Principles of Management",
+    desc: ""
+  },
+  "C278": {
+    name: "College Algebra",
+    desc: ""
+  },
+  "C456": {
+    name: "English Composition II",
+    desc: ""
+  },
+  "C255": {
+    name: "Introduction to Geography",
+    desc: ""
+  },
+  "C132": {
+    name: "Elements of Effective Communication",
+    desc: ""
+  },s
+  "C168": {
+    name: "Critical Thinking and Logic",
+    desc: ""
+  },
+  "C100": {
+    name: "Introduction to Humanities",
+    desc: ""
+  },
+  "C459": {
+    name: "Introduction to Probability and Statistics",
+    desc: ""
+  },
+  "C164": {
+    name: "Introduction to Physics",
+    desc: ""
+  },
+  "C376": {
+    name: "Web Development Fundamentals",
+    desc: ""
+  },
+
+    
   "C169": {
     name: "Scripting and Programming - Applications",
     desc: "This course provides an introduction to programming. It covers data structures, algorithms, and programming paradigms. It presents the concept of an object as well as the object-oriented paradigm and its importance. A survey of languages is covered and the distinction between interpreted and compiled languages is introduced."
@@ -115,6 +401,11 @@ module.exports = {
     name: "Technical Writing",
     desc: "This course covers basic elements of technical writing, including research and professional written communication proficiency; the ability to think about and write for different audiences; and technical style, grammar, and syntax proficiency."
   },
+  
+  "C769": {
+    name: "IT Capstone Written Project",
+    desc: "The capstone project consists of a technical work product and a report that details various aspects of the product. The final product will also include a journal that contemporaneously describes the candidate’s experience in developing the capstone. The topic of the capstone must be presented and approved by the student’s mentor."
+  },
   "C436": {
     name: "IT Capstone Written Project",
     desc: "The capstone project consists of a technical work product and a report that details various aspects of the product. The final product will also include a journal that contemporaneously describes the candidate’s experience in developing the capstone. The topic of the capstone must be presented and approved by the student’s mentor."
@@ -146,10 +437,6 @@ module.exports = {
   "C768": {
     name: "Technical Communication",
     desc: "This course covers basic elements of technical communication, including professional written communication proficiency; the ability to strategize approaches for differing audiences; and technical style, grammar, and syntax proficiency."
-  },
-  "C769": {
-    name: "IT Capstone Written Project",
-    desc: "The capstone project consists of a technical work proposal, the proposal’s implementation, and a post-implementation report that describes the graduate’s experience in developing and implementing the capstone project. The capstone project should be presented and approved by the mentor in relation to the graduate’s technical emphasis."
   },
   "C846": {
     name: "Business of IT - Applications",
