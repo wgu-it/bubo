@@ -11,7 +11,7 @@
 #   Ryan Winchester <code@ryanwinchester.ca>
 
 module.exports = {
-"C200": {
+  "C200": {
     name: "Managing Organizations and Leading People",
     desc: ""
   },
