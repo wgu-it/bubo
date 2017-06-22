@@ -25,15 +25,15 @@ module.exports = (robot) ->
         msg.send 'An error has occurred. Is https://relevantxkcd.appspot.com/ up?'
       else
         # Extract appropriate data from response
-        responseData = body.split(' ')
+        responseData = body.split('\n')
         percentageCertainty = responseData[0]
-        comicNumber = parseInt(responseData[2], 10)
+        comicNumber = parseInt(responseData[2].replace /\s+$/g, "", 10)
 
         # Get the comic details from XKCD
-        msg.http("http://xkcd.com/#{comicNumber}/info.0.json")
+        msg.http("https://xkcd.com/#{comicNumber}/info.0.json")
         .get() (err, res, body) ->
-          if res.statusCode == 404
-            msg.send 'Comic #{num} not found.'
+          if res.statusCode isnt 200
+            msg.send "Comic #{comicNumber} not found. Got #{res.statusCode}."
           else
             object = JSON.parse(body)
             msg.send object.title, object.img, object.alt
