@@ -29,5 +29,5 @@ module.exports = (robot) ->
     if msg.message.type == 'team_join'
       msg.send greeting
 
-  robot.respond /greet (\w+)/, (msg) ->
-    msg.send "#{msg.match[0]}\n#{greeting}"
+  robot.respond /greet ([^\s]+)/, (msg) ->
+    msg.send "#{msg.match[1]}!\n#{greeting}"
