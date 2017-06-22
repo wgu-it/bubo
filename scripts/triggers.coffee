@@ -21,7 +21,7 @@ module.exports = (robot) ->
     msg.send ("#{trigger_char}#{key}" for own key of triggers).join(", ")
 
   robot.hear ///^#{trigger_char}(.+)$///gi, (msg) ->
-    if msg.message.room == 'C0Z77BT4M' or msg.message.room == 'C0Z77BT8V' or msg.message.room == 'Shell'
+    if msg.message.room is 'C0Z77BT4M' or msg.message.room is 'C0Z77BT8V' or msg.message.room is 'G5YGDFA07' or msg.message.room is 'Shell'
       match = msg.match[0].replace(///^#{trigger_char}///, "")
       if triggers[match]?
         msg.send triggers[match]
