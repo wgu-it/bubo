@@ -83,10 +83,6 @@ module.exports = {
     name: "Machine Learning",
     desc: ""
   },
-  "C768": {
-    name: "Technical Communications",
-    desc: ""
-  },
   "C207": {
     name: "Data-Driven Decision Making",
     desc: ""
@@ -203,14 +199,6 @@ module.exports = {
     name: "Current and Emerging Technology",
     desc: ""
   },
-  "MCT2": {
-    name: "Technical Writing for MS IT Management",
-    desc: ""
-  },
-  "MBT2": {
-    name: "Technological Globalization",
-    desc: ""
-  },
   "C701": {
     name: "Ethical Hacking - EC-CEH",
     desc: ""
@@ -290,13 +278,7 @@ module.exports = {
   "C164": {
     name: "Introduction to Physics",
     desc: ""
-  },
-  "C376": {
-    name: "Web Development Fundamentals",
-    desc: ""
-  },
-
-    
+  },    
   "C169": {
     name: "Scripting and Programming - Applications",
     desc: "This course provides an introduction to programming. It covers data structures, algorithms, and programming paradigms. It presents the concept of an object as well as the object-oriented paradigm and its importance. A survey of languages is covered and the distinction between interpreted and compiled languages is introduced."
