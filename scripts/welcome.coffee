@@ -14,7 +14,6 @@ response = welcome_materials.welcome_message +
 "\n\n Feel free to reach out if you have any questions, and again, welcome! :smile:";
 
 module.exports = (robot) ->
-  robot.hear /(joined #general$)/gi, (msg) ->
-    robot.respond
-    if msg.message.room == 'C0Z77BT4M' or msg.message.room == 'C0Z77BT8V' or msg.message.room == 'Shell'
+  robot.hear /(joined #bubo-test$)/gi, (msg) ->
+    if msg.message.room == 'G5YGDFA07' or msg.message.room == 'Shell'
       msg.send(response)
