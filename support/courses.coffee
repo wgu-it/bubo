@@ -11,292 +11,26 @@
 #   Ryan Winchester <code@ryanwinchester.ca>
 
 module.exports = {
-"C200": {
-    name: "Managing Organizations and Leading People",
-    desc: ""
-  },
-  "C700": {
-    name: "Secure Network Design",
-    desc: ""
-  },
-  "VLT2": {
-    name: "Security Policies and Standards - Best Practices",
-    desc: ""
-  },
-  "C299": {
-    name: "Designing Customized Security - CCNA Security",
-    desc: ""
-  },
-  "C298": {
-    name: "Web Programming",
-    desc: ""
-  },
-  "C463": {
-    name: "Intermediate Algebra",
-    desc: ""
-  },
-  "C451": {
-    name: "Integrated Natural Science",
-    desc: ""
-  },
-  "C434": {
-    name: "Medical Terminology",
-    desc: ""
-  },
-  "C779": {
-    name: "Web Development Foundations - CIW Site Development Fundamentals",
-    desc: ""
-  },
-  "C268": {
-    name: "Spreadsheets",
-    desc: ""
-  },
-  "C754": {
-    name: "Structured Query Language - Oracle DB 12c SQL Fundamentals",
-    desc: ""
-  },
-  "C755": {
-    name: "Database Server Administration - Oracle DB 12c Installation and Administration",
-    desc: ""
-  },
-  "C752": {
-    name: "Data Visualization",
-    desc: ""
-  },
-  "C756": {
-    name: "Data Analytics - CIW Data Analyst",
-    desc: ""
-  },
-  "C749": {
-    name: "Introduction to Data Science",
-    desc: ""
-  },
-  "C750": {
-    name: "Data Wrangling with MongoDB",
-    desc: ""
-  },
-  "C751": {
-    name: "Data Analysis with R",
-    desc: ""
-  },
-  "C753": {
-    name: "Machine Learning",
-    desc: ""
-  },
-  "C768": {
-    name: "Technical Communications",
-    desc: ""
-  },
-  "C207": {
-    name: "Data-Driven Decision Making",
-    desc: ""
-  },
-  "C688": {
-    name: "Cyber Warfare",
-    desc: ""
-  },
-  "C185": {
-    name: "Network Policies and Services Management",
-    desc: ""
-  },
-  "C186": {
-    name: "Server Administration",
-    desc: ""
-  },
-  "C187": {
-    name: "Network Reliability and Fault Tolerance",
-    desc: ""
-  },
-  "C183": {
-    name: "Operating Systems",
-    desc: ""
-  },
-  "C184": {
-    name: "Operating Systems Management Policies",
-    desc: ""
-  },
-  "JIT2": {
-    name: "Risk Management",
-    desc: ""
-  },
-  "C740": {
-    name: "Fundamentals of Data Analytics",
-    desc: ""
-  },
-  "C741": {
-    name: "Statistics for Data Analysis",
-    desc: ""
-  },
-  "C742": {
-    name: "Data Science Tools and Techniques",
-    desc: ""
-  },
-  "C743": {
-    name: "Data Mining and Analytics I",
-    desc: ""
-  },
-  "C744": {
-    name: "Data Mining and Analytics II",
-    desc: ""
-  },
-  "C745": {
-    name: "Advanced Data Visualization",
-    desc: ""
-  },
-  "C746": {
-    name: "Advanced SQL - Oracle SQL Certified Expert",
-    desc: ""
-  },
-  "C747": {
-    name: "SAS Programming I: Fundamentals - SAS Base Programmer",
-    desc: ""
-  },
-  "C748": {
-    name: "SAS Programming II: Business Analytics Applications - SAS Statistical Business Analyst",
-    desc: ""
-  },
-  "C772": {
-    name: "Data Analytics Graduate Capstone",
-    desc: ""
-  },
-  "C706": {
-    name: "Secure Software Design",
-    desc: ""
-  },
-  "C214": {
-    name: "Financial Management",
-    desc: ""
-  },
-  "MGT2": {
-    name: "IT Project Management",
-    desc: ""
-  },
-  "C202": {
-    name: "Managing Human Capital",
-    desc: ""
-  },
-  "C212": {
-    name: "Marketing",
-    desc: ""
-  },
-  "C213": {
-    name: "Accounting for Decision Makers",
-    desc: ""
-  },
-  "C211": {
-    name: "Global Economics for Managers",
-    desc: ""
-  },
-  "C206": {
-    name: "Ethical Leadership",
-    desc: ""
-  },
-  "MMT2": {
-    name: "IT Strategic Solutions",
-    desc: ""
-  },
-  "C218": {
-    name: "MBA, Information Technology Management Capstone",
-    desc: ""
-  },
-  "LYT2": {
-    name: "Current and Emerging Technology",
-    desc: ""
-  },
-  "MCT2": {
-    name: "Technical Writing for MS IT Management",
-    desc: ""
-  },
-  "MBT2": {
-    name: "Technological Globalization",
-    desc: ""
-  },
-  "C701": {
-    name: "Ethical Hacking - EC-CEH",
-    desc: ""
-  },
-  "C702": {
-    name: "Forensics and Network Intrusion - EC-CHFI",
-    desc: ""
-  },
-  "FXT2": {
-    name: "Disaster Recovery Planning, Prevention and Response",
-    desc: ""
-  },
-  "C464": {
-    name: "Introduction to Communication",
-    desc: ""
-  },
-  "C190": {
-    name: "Introduction to Biology",
-    desc: ""
-  },
-  "C683": {
-    name: "Natural Science Lab",
-    desc: ""
-  },
-  "C165": {
-    name: "Integrated Physical Science",
-    desc: ""
-  },
-  "C777": {
-    name: "Web Development Applications",
-    desc: ""
-  },
-  "C455": {
-    name: "English Composition I",
-    desc: ""
-  },
-  "C457": {
-    name: "Foundations of College Mathematics",
-    desc: ""
-  },
-  "C484": {
-    name: "Organizational Behavior and Leadership",
-    desc: ""
-  },
-  "C483": {
-    name: "Principles of Management",
-    desc: ""
-  },
-  "C278": {
-    name: "College Algebra",
-    desc: ""
-  },
-  "C456": {
-    name: "English Composition II",
-    desc: ""
-  },
-  "C255": {
-    name: "Introduction to Geography",
-    desc: ""
+  "C100": {
+    name: "Introduction to Humanities",
+    desc: "TODO"
   },
   "C132": {
     name: "Elements of Effective Communication",
-    desc: ""
-  },s
-  "C168": {
-    name: "Critical Thinking and Logic",
-    desc: ""
-  },
-  "C100": {
-    name: "Introduction to Humanities",
-    desc: ""
-  },
-  "C459": {
-    name: "Introduction to Probability and Statistics",
-    desc: ""
+    desc: "TODO"
   },
   "C164": {
     name: "Introduction to Physics",
-    desc: ""
+    desc: "TODO"
   },
-  "C376": {
-    name: "Web Development Fundamentals",
-    desc: ""
+  "C165": {
+    name: "Integrated Physical Science",
+    desc: "TODO"
   },
-
-    
+  "C168": {
+    name: "Critical Thinking and Logic",
+    desc: "TODO"
+  },
   "C169": {
     name: "Scripting and Programming - Applications",
     desc: "This course provides an introduction to programming. It covers data structures, algorithms, and programming paradigms. It presents the concept of an object as well as the object-oriented paradigm and its importance. A survey of languages is covered and the distinction between interpreted and compiled languages is introduced."
@@ -329,6 +63,26 @@ module.exports = {
     name: "Business of IT - Applications",
     desc: "This course introduces IT students to information systems (IS). The course includes important topics related to management of information systems (MIS), such as system development, and business continuity. The course also provides an overview of management tools and issue tracking systems."
   },
+  "C183": {
+    name: "Operating Systems",
+    desc: "TODO"
+  },
+  "C184": {
+    name: "Operating Systems Management Policies",
+    desc: "TODO"
+  },
+  "C185": {
+    name: "Network Policies and Services Management",
+    desc: "TODO"
+  },
+  "C186": {
+    name: "Server Administration",
+    desc: "TODO"
+  },
+  "C187": {
+    name: "Network Reliability and Fault Tolerance",
+    desc: "TODO"
+  },
   "C188": {
     name: "Software Engineering",
     desc: "This course introduces the concepts of software engineering to IT core graduates. It is a standalone course that is critical to the IT program. It emphasizes the need for a disciplined approach to software engineering by providing an overview of software and software engineering processes and why they are challenging. A generic process framework is covered to provide the groundwork for formal process models. Prescriptive process models (e.g., Waterfall Model) and Agile Development is included. An introduction to the"
@@ -336,6 +90,10 @@ module.exports = {
   "C189": {
     name: "Data Structures",
     desc: "Students will learn the fundamentals of dynamic data structures, such as bags, lists, stacks, queues, trees, hash tables, and their associated algorithms, using object-oriented design and abstract data types as a design paradigm. The course emphasizes problem solving and techniques applied to the design of efficient, maintainable software applications. Students will implement simple applications using the techniques learned."
+  },
+  "C190": {
+    name: "Introduction to Biology",
+    desc: "TODO"
   },
   "C191": {
     name: "Operating Systems for Programmers",
@@ -357,6 +115,42 @@ module.exports = {
     name: "Mobile Application Development",
     desc: "This course introduces students to programming for mobile devices using a Software Development Kit (SDK). Students with previous knowledge of programming will learn how to install and utilize a SDK, build a basic mobile application, build a mobile applications using a graphical user interface(GUI), adapt applications to different mobile devices, save data, execute and debug mobile applications using emulators, and deploy a mobile application."
   },
+  "C200": {
+    name: "Managing Organizations and Leading People",
+    desc: "TODO"
+  },
+  "C202": {
+    name: "Managing Human Capital",
+    desc: "TODO"
+  },
+  "C206": {
+    name: "Ethical Leadership",
+    desc: "TODO"
+  },
+  "C207": {
+    name: "Data-Driven Decision Making",
+    desc: "TODO"
+  },
+  "C211": {
+    name: "Global Economics for Managers",
+    desc: "TODO"
+  },
+  "C212": {
+    name: "Marketing",
+    desc: "TODO"
+  },
+  "C213": {
+    name: "Accounting for Decision Makers",
+    desc: "TODO"
+  },
+  "C214": {
+    name: "Financial Management",
+    desc: "TODO"
+  },
+  "C218": {
+    name: "MBA, Information Technology Management Capstone",
+    desc: "TODO"
+  },
   "C220": {
     name: "Operating Systems I",
     desc: "This course prepares students for Linux + Part 1 LX0-101 certification."
@@ -372,6 +166,26 @@ module.exports = {
   "C247": {
     name: "Interconnecting Network Devices",
     desc: "This course prepares students for the second Cisco CCNA certification exam, Interconnecting Cisco Networking Devices Part 2 (ICND2)."
+  },
+  "C255": {
+    name: "Introduction to Geography",
+    desc: "TODO"
+  },
+  "C268": {
+    name: "Spreadsheets",
+    desc: "TODO"
+  },
+  "C278": {
+    name: "College Algebra",
+    desc: "TODO"
+  },
+  "C298": {
+    name: "Web Programming",
+    desc: "TODO"
+  },
+  "C299": {
+    name: "Designing Customized Security - CCNA Security",
+    desc: "TODO"
   },
   "C376": {
     name: "Web Development Fundamentals",
@@ -397,18 +211,45 @@ module.exports = {
     name: "IT Applications",
     desc: "IT Applications is a continuation of the IT Foundations course preparatory for the CompTIA A+ exam, Part II. Students will gain an understanding of personal computer components and their functions in a desktop system. Also covered is computer data storage and retrieval, including classifying, installing, configuring, optimizing, upgrading, and troubleshooting printers, laptops, portable devices, operating systems, networks, and system security. Other areas include recommending appropriate tools, diagnostic procedures, preventative maintenance and troubleshooting techniques for personal computer components in a desktop system. The course then finished with strategies for identifying, preventing, and reporting safety hazards and environmental/human accidents in a technological environments, and effective communication with colleagues and clients as well as job-related professional behavior."
   },
+  "C434": {
+    name: "Medical Terminology",
+    desc: "TODO"
+  },
   "C435": {
     name: "Technical Writing",
     desc: "This course covers basic elements of technical writing, including research and professional written communication proficiency; the ability to think about and write for different audiences; and technical style, grammar, and syntax proficiency."
   },
-  
-  "C769": {
-    name: "IT Capstone Written Project",
-    desc: "The capstone project consists of a technical work product and a report that details various aspects of the product. The final product will also include a journal that contemporaneously describes the candidate’s experience in developing the capstone. The topic of the capstone must be presented and approved by the student’s mentor."
-  },
   "C436": {
     name: "IT Capstone Written Project",
     desc: "The capstone project consists of a technical work product and a report that details various aspects of the product. The final product will also include a journal that contemporaneously describes the candidate’s experience in developing the capstone. The topic of the capstone must be presented and approved by the student’s mentor."
+  },
+  "C451": {
+    name: "Integrated Natural Science",
+    desc: "TODO"
+  },
+  "C455": {
+    name: "English Composition I",
+    desc: "TODO"
+  },
+  "C456": {
+    name: "English Composition II",
+    desc: "TODO"
+  },
+  "C457": {
+    name: "Foundations of College Mathematics",
+    desc: "TODO"
+  },
+  "C459": {
+    name: "Introduction to Probability and Statistics",
+    desc: "TODO"
+  },
+  "C463": {
+    name: "Intermediate Algebra",
+    desc: "TODO"
+  },
+  "C464": {
+    name: "Introduction to Communication",
+    desc: "TODO"
   },
   "C479": {
     name: "Web Technologies",
@@ -422,9 +263,25 @@ module.exports = {
     name: "Software I",
     desc: "Software I builds object-oriented programming expertise and introduces powerful new tools for Java application development. You will learn about and put into action class design, exception handling, and other object-oriented principles and constructs to develop software that meets business requirements. This course requires foundational knowledge of object-oriented programming and the Java language."
     },
+  "C483": {
+    name: "Principles of Management",
+    desc: "TODO"
+  },
+  "C484": {
+    name: "Organizational Behavior and Leadership",
+    desc: "TODO"
+  },
   "C498": {
     name: "MS, Information Technology Management Capstone",
     desc: "The MSITM Capstone Project allows the student to demonstrate their application of the academic and professional abilities developed as a graduate student. The Capstone challenges students to integrate skills and knowledge of several domains in the program into one project."
+  },
+  "C683": {
+    name: "Natural Science Lab",
+    desc: "TODO"
+  },
+  "C688": {
+    name: "Cyber Warfare",
+    desc: "TODO"
   },
   "C697": {
     name: "Operating Systems I",
@@ -434,9 +291,197 @@ module.exports = {
     name: "Operating Systems II",
     desc: "This course prepares students for the following certification exam: CompTIA Linux+ Part II."
   },
+  "C700": {
+    name: "Secure Network Design",
+    desc: "TODO"
+  },
+  "C701": {
+    name: "Ethical Hacking - EC-CEH",
+    desc: "TODO"
+  },
+  "C702": {
+    name: "Forensics and Network Intrusion - EC-CHFI",
+    desc: "TODO"
+  },
+  "C706": {
+    name: "Secure Software Design",
+    desc: "TODO"
+  },
+  "C740": {
+    name: "Fundamentals of Data Analytics",
+    desc: "TODO"
+  },
+  "C741": {
+    name: "Statistics for Data Analysis",
+    desc: "TODO"
+  },
+  "C742": {
+    name: "Data Science Tools and Techniques",
+    desc: "TODO"
+  },
+  "C743": {
+    name: "Data Mining and Analytics I",
+    desc: "TODO"
+  },
+  "C744": {
+    name: "Data Mining and Analytics II",
+    desc: "TODO"
+  },
+  "C745": {
+    name: "Advanced Data Visualization",
+    desc: "TODO"
+  },
+  "C746": {
+    name: "Advanced SQL - Oracle SQL Certified Expert",
+    desc: "TODO"
+  },
+  "C747": {
+    name: "SAS Programming I: Fundamentals - SAS Base Programmer",
+    desc: "TODO"
+  },
+  "C748": {
+    name: "SAS Programming II: Business Analytics Applications - SAS Statistical Business Analyst",
+    desc: "TODO"
+  },
+  "C749": {
+    name: "Introduction to Data Science",
+    desc: "TODO"
+  },
+  "C750": {
+    name: "Data Wrangling with MongoDB",
+    desc: "TODO"
+  },
+  "C751": {
+    name: "Data Analysis with R",
+    desc: "TODO"
+  },
+  "C752": {
+    name: "Data Visualization",
+    desc: "TODO"
+  },
+  "C753": {
+    name: "Machine Learning",
+    desc: "TODO"
+  },
+  "C754": {
+    name: "Structured Query Language - Oracle DB 12c SQL Fundamentals",
+    desc: "TODO"
+  },
+  "C755": {
+    name: "Database Server Administration - Oracle DB 12c Installation and Administration",
+    desc: "TODO"
+  },
+  "C756": {
+    name: "Data Analytics - CIW Data Analyst",
+    desc: "TODO"
+  },
   "C768": {
     name: "Technical Communication",
     desc: "This course covers basic elements of technical communication, including professional written communication proficiency; the ability to strategize approaches for differing audiences; and technical style, grammar, and syntax proficiency."
+  },
+  "C769": {
+    name: "IT Capstone Written Project",
+    desc: "The capstone project consists of a technical work product and a report that details various aspects of the product. The final product will also include a journal that contemporaneously describes the candidate’s experience in developing the capstone. The topic of the capstone must be presented and approved by the student’s mentor."
+  },
+  "C700": {
+    name: "Secure Network Design",
+    desc: "TODO"
+  },
+  "C701": {
+    name: "Ethical Hacking - EC-CEH",
+    desc: "TODO"
+  },
+  "C702": {
+    name: "Forensics and Network Intrusion - EC-CHFI",
+    desc: "TODO"
+  },
+  "C706": {
+    name: "Secure Software Design",
+    desc: "TODO"
+  },
+  "C740": {
+    name: "Fundamentals of Data Analytics",
+    desc: "TODO"
+  },
+  "C741": {
+    name: "Statistics for Data Analysis",
+    desc: "TODO"
+  },
+  "C742": {
+    name: "Data Science Tools and Techniques",
+    desc: "TODO"
+  },
+  "C743": {
+    name: "Data Mining and Analytics I",
+    desc: "TODO"
+  },
+  "C744": {
+    name: "Data Mining and Analytics II",
+    desc: "TODO"
+  },
+  "C745": {
+    name: "Advanced Data Visualization",
+    desc: "TODO"
+  },
+  "C746": {
+    name: "Advanced SQL - Oracle SQL Certified Expert",
+    desc: "TODO"
+  },
+  "C747": {
+    name: "SAS Programming I: Fundamentals - SAS Base Programmer",
+    desc: "TODO"
+  },
+  "C748": {
+    name: "SAS Programming II: Business Analytics Applications - SAS Statistical Business Analyst",
+    desc: "TODO"
+  },
+  "C749": {
+    name: "Introduction to Data Science",
+    desc: "TODO"
+  },
+  "C750": {
+    name: "Data Wrangling with MongoDB",
+    desc: "TODO"
+  },
+  "C751": {
+    name: "Data Analysis with R",
+    desc: "TODO"
+  },
+  "C752": {
+    name: "Data Visualization",
+    desc: "TODO"
+  },
+  "C753": {
+    name: "Machine Learning",
+    desc: "TODO"
+  },
+  "C754": {
+    name: "Structured Query Language - Oracle DB 12c SQL Fundamentals",
+    desc: "TODO"
+  },
+  "C755": {
+    name: "Database Server Administration - Oracle DB 12c Installation and Administration",
+    desc: "TODO"
+  },
+  "C756": {
+    name: "Data Analytics - CIW Data Analyst",
+    desc: "TODO"
+  },
+  "C768": {
+    name: "Technical Communications",
+    desc: "TODO"
+  },
+  "C772": {
+    name: "Data Analytics Graduate Capstone",
+    desc: "TODO"
+  },
+  "C777": {
+    name: "Web Development Applications",
+    desc: "TODO"
+  },
+  "C779": {
+    name: "Web Development Foundations - CIW Site Development Fundamentals",
+    desc: "TODO"
   },
   "C846": {
     name: "Business of IT - Applications",
@@ -452,7 +497,7 @@ module.exports = {
   },
   "CPW2": {
     name: "IT-Network Administration Capstone Project",
-    desc: ""
+    desc: "TODO"
   },
   "CUV1": {
     name: "Web Technologies",
@@ -490,9 +535,21 @@ module.exports = {
     name: "Operating Systems",
     desc: "Students will master installation, configuration, and troubleshooting for one of the world's leading operating systems: Windows 7."
   },
+  "FXT2": {
+    name: "Disaster Recovery Planning, Prevention and Response",
+    desc: "TODO"
+  },
+  "JIT2": {
+    name: "Risk Management",
+    desc: "TODO"
+  },
   "LQT2": {
     name: "Information Security and Assurance Capstone Project",
     desc: "Students will be able to choose from three areas of emphasis, depending on personal and professional interests. Students will complete a capstone project that deals with a significant real-world business problem that further integrates the components of the degree. Capstone projects will require an oral defense before a committee of WGU faculty."
+  },
+  "LYT2": {
+    name: "Current and Emerging Technology",
+    desc: "TODO"
   },
   "MAT2": {
     name: "Information Technology Management",
@@ -505,6 +562,14 @@ module.exports = {
   "MCT2": {
     name: "Technical Writing",
     desc: "As IT professionals are frequently required to interface with customers, clients, other departments, organizational leaders, and even other institutions, strong communication skills are vital. In this course, students learn to communicate accurately, effectively, and ethically to a variety of audiences. Students design communication to fit oral, print, and multi-media contexts. They develop rhetorical sensitivity in both their writing and their design decisions."
+  },
+  "MGT2": {
+    name: "IT Project Management",
+    desc: "TODO"
+  },
+  "MMT2": {
+    name: "IT Strategic Solutions",
+    desc: "TODO"
   },
   "SBT1": {
     name: "Technical Writing",
@@ -521,6 +586,10 @@ module.exports = {
   "TPV1": {
     name: "Project Management",
     desc: "This course focuses on skills and concepts students need to know to plan and implement projects. The project initiation and planning process is covered in-depth, culminating in the creation of a project schedule. Learning how to manage business concerns such as cost and risk is balanced by thorough coverage of best practices in managing people and resources. Students will also learn how to manage change and the steps necessary in closing a project."
+  },
+  "VLT2": {
+    name: "Security Policies and Standards - Best Practices",
+    desc: "TODO"
   },
   "WPV1": {
     name: "Software II",
