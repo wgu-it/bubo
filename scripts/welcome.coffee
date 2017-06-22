@@ -31,3 +31,7 @@ module.exports = (robot) ->
   robot.hear /^([^\s]+) has joined the channel$/, (msg) ->
     if msg.message.room == 'C0Z77BT8V' or msg.message.room == 'G5YGDFA07' or msg.message.room == 'Shell'
       msg.send "Hi, #{msg.match[0]}"
+
+  robot.hear /./, (msg) ->
+    if msg.message.type == 'team_join'
+      msg.send 'YISS'
