@@ -16,7 +16,7 @@
 module.exports = (robot) ->
 
   robot.hear /!(?:gif|animate)( me)? (.*)/i, (msg) ->
-    if msg.message.room == 'G4FL9V07P' or msg.message.room == 'C4E0JMACS' or msg.message.room == 'Shell'
+    if res.message.room == 'C0Z77BT4M' or res.message.room == 'C0Z77BT8V' or res.message.room == 'Shell'
       rightGif msg, msg.match[2], (url) ->
         msg.send url
 

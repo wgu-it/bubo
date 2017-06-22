@@ -15,7 +15,7 @@
 module.exports = (robot) ->
 
   robot.respond /(image|img)( me)?( -)? (.*)/i, (msg) ->
-    if msg.message.room == 'G4FL9V07P' or msg.message.room == 'C4E0JMACS' or msg.message.room == 'Shell'
+    if res.message.room == 'C0Z77BT4M' or res.message.room == 'C0Z77BT8V' or res.message.room == 'Shell'
       account_key = process.env.HUBOT_BING_IMAGES_KEY
       adult = process.env.HUBOT_BING_IMAGES_ADULT || "Strict"
       url = "https://api.datamarket.azure.com/Bing/Search/v1/Image"

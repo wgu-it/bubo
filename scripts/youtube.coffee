@@ -6,7 +6,7 @@
 
 module.exports = (robot) ->
   robot.respond /(video|vid)( me)?( -)? (.*)/i, (msg) ->
-    if msg.message.room == 'G4FL9V07P' or msg.message.room == 'C4E0JMACS' or msg.message.room == 'Shell'
+    if res.message.room == 'C0Z77BT4M' or res.message.room == 'C0Z77BT8V' or res.message.room == 'Shell'
       norandom = msg.match[3]?
       query = msg.match[4]
       robot.http("https://www.googleapis.com/youtube/v3/search")
