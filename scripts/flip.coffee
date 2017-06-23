@@ -17,4 +17,4 @@ module.exports = (robot) ->
 
   robot.respond /flip/i, (msg) ->
     headsOrTails = Math.floor(Math.random() * 100) + 1
-    msg.send "/me flipped a coin for #{msg.message.user.name} and it landed  #{headsOrTails < 51 ? "*tails*" : "*heads*"}!"
+    msg.send "I flipped a coin for #{msg.message.user.name} and it landed  #{if headsOrTails < 51 then "*tails*" else "*heads*"}!"
