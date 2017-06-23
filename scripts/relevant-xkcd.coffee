@@ -5,7 +5,7 @@
 #   None
 #
 # Commands:
-#   hubot relevant xkcd <phrase>
+#   hubot xkcd <phrase>
 #
 #
 # Notes:
