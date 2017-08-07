@@ -307,6 +307,10 @@ module.exports = {
     name: "Secure Software Design",
     desc: "This course provides students with a practical guide to establishing proactive software security. The course focuses on analyzing risks, understanding likely points of attack and proactively deciding how software will handle attacks of the future. By looking at the systemic threats in any deployment environment and discussing vulnerabilities of various applications, this course shows the student how to construct software that can deal with both known and unknown attacks preemptively."
   },
+  "C722": {
+    name: "Project Management",
+    desc: "Project Management prepares you to manage projects from start to finish within any organizational structure. The course presents a view into different project-management methods and delves into topics such as project profiling and phases, constraints, building the project team, scheduling, and risk. You will be able to grasp the full scope of projects you may work on in the future, and apply the proper management approaches to complete a project. The course features practice in each of the project phases as you learn how to strategically apply project-management tools and techniques to help organizations achieve their goals"
+  },
   "C740": {
     name: "Fundamentals of Data Analytics",
     desc: "This courses provides an introduction to a variety of tools and techniques used in the field of data analytics. Students will summarize data, review statistical models, explore data mining techniques, and contemplate ethical considerations associated with the field of data analytics. This course presents a survey of concepts which will be explored more in-depth in subsequent courses in the MS Data Analytics program. "
